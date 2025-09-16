@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Frederico F. da Silva</title>
+
+  <!-- Bootstrap para CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap para Icons  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Frederico F. da Silva</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formulario">Formulário</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero text-white text-center py-5">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative" style="z-index:2">
+      <img src="img/foto.jpg" alt="Minha Foto" class="rounded-circle shadow mb-3" width="180">
+      <h1 class="fw-bold">Frederico F. da Silva</h1>
+      <p class="lead">Analista de TI | Desenvolvedor Full Stack</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Contato -->
+    <section id="contato" class="mb-5 container">
+      <h2 class="text-primary">Contato</h2>
+      <ul class="list-group">
+        <li class="list-group-item d-flex align-items-center gap-2">
+          <i class="bi bi-envelope-fill text-primary fs-4"></i>
+          <span>Fred_ferr@hotmail.com</span>
+        </li>
+        <li class="list-group-item d-flex gap-3">
+          <a href="https://www.linkedin.com/in/frederico-ferreira-ba1a0025/" target="_blank"
+            class="d-inline-flex align-items-center justify-content-center p-2 rounded transition">
+            <i class="bi bi-linkedin fs-3 text-primary"></i>
+          </a>
+          <a href="https://github.com/FredericoFerr/pythonFullStack_SENAC" target="_blank"
+            class="d-inline-flex align-items-center justify-content-center p-2 rounded transition">
+            <i class="bi bi-github fs-3 text-dark"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Perfil -->
+    <section id="perfil" class="mb-5">
+      <h2 class="text-primary">Perfil Profissional</h2>
+      <div class="card shadow">
+        <div class="card-body">
+          <h5 class="card-title">Líder de Equipe de Suporte</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Jan 2020 - Presente</h6>
+          <p class="card-text">
+            Responsável pela coordenação, execução e acompanhamento de projetos em contato direto com o cliente, 
+            garantindo qualidade, produtividade e redução de custos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section id="formacao" class="mb-5">
+      <h2 class="text-primary">Formação</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Graduação:</strong> Tecnologia em Redes de Computadores - Uniabeu (2003)
+        </li>
+        <li class="list-group-item">
+          Desenvolvimento Full Stack em Python - Senac (em curso)
+        </li>
+        <li class="list-group-item">
+          Microsoft 365 Fundamentals (MS-900) - concluído
+        </li>
+        <li class="list-group-item">
+          Microsoft Security (SC-900) - concluído
+        </li>
+        <li class="list-group-item">
+          CyberOps Associate - Cisco Academy - concluído
+        </li>
+        <li class="list-group-item">
+          Cybersecurity Essentials - Cisco Academy - concluído
+        </li>
+      </ul>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="mb-5">
+      <h2 class="text-primary">Hobbies e Interesses</h2>
+      <table class="table table-bordered table-hover shadow">
+        <thead class="table-dark">
+          <tr>
+            <th>Hobby</th>
+            <th>Nível</th>
+            <th>Descrição</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Programação</td>
+            <td>Avançado</td>
+            <td>Desenvolvimento de aplicações web, scripts em java e Python.</td>
+            <td><a href="https://www.rj.senac.br" class="botao">Conheça</a></td>
+          </tr>
+          <tr>
+            <td>Viagens</td>
+            <td>Intermediário</td>
+            <td>Explorar novos lugares e conhecer novas culturas.</td>
+            <td><a href="https://guia.melhoresdestinos.com.br" class="botao">Conheça</a></td>
+          </tr>
+          <tr>
+            <td>Filmes</td>
+            <td>Básico</td>
+            <td>Ficção cientifica e ação nas horas vagas.</td>
+            <td><a href="https://www.youtube.com/@StarTrekOfficial" class="botao">Conheça</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Formulário -->
+    <section id="formulario" class="mb-5">
+      <h2 class="text-primary">Contato / Feedback</h2>
+      <form class="p-4 border rounded shadow bg-light">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" id="nome" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem:</label>
+          <textarea id="mensagem" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Opinião:</label><br>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="gostei" name="opiniao" class="form-check-input">
+            <label for="gostei" class="form-check-label">Gostei</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="naoGostei" name="opiniao" class="form-check-input">
+            <label for="naoGostei" class="form-check-label">Não Gostei</label>
+          </div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" id="termos" class="form-check-input">
+          <label for="termos" class="form-check-label">Concordo com os termos fictícios.</label>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 - Desenvolvido por Frederico F. da Silva</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

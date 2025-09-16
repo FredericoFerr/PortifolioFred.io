@@ -1,0 +1,117 @@
+/* Transição suave para os ícones */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* --------- Estilo para Ícones de Contato --------- */
+
+/* Envelope (email) */
+.bi-envelope-fill {
+  color: #0d6efd; /* azul Bootstrap */
+}
+a:hover .bi-envelope-fill,
+a:focus .bi-envelope-fill {
+  color: #0b5ed7;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #0d6efd);
+}
+
+/* LinkedIn */
+.bi-linkedin {
+  color: #0a66c2; 
+}
+a:hover .bi-linkedin,
+a:focus .bi-linkedin {
+  color: #004182;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #0a66c2);
+}
+
+/* GitHub */
+.bi-github {
+  color: #24292f;
+}
+a:hover .bi-github,
+a:focus .bi-github {
+  color: #000;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #333);
+}
+
+/* --------- Botões "Conheça" --------- */
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #45a049;
+}
+
+/* --------- Estilo geral --------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1, h2, h4 {
+  font-weight: bold;
+  border-left: 5px solid #0d6efd;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+img {
+  border: 4px solid #0d6efd;
+}
+
+/* --- Hero banner --- */
+.hero {
+  position: relative;
+  background-image: url('img/banner_rede.jpg');
+  background-size: cover;
+  background-position: center right;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* overlay escuro para legibilidade do texto */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.0) 100%);
+  z-index: 1;
+}
+
+/* garantir que o conteúdo fique acima do overlay */
+.hero .container.position-relative {
+  position: relative;
+  z-index: 2;
+}
+
+/* ajustar a borda da foto para ficar bem no banner */
+.hero img {
+  border: 4px solid rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* responsividade */
+@media (max-width: 576px) {
+  .hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-position: center;
+  }
+}
